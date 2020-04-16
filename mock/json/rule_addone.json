@@ -1,0 +1,57 @@
+{
+  "data": {
+    "id": 25,
+    "value": "alertnotify@163.com",
+    "type": "fromAdd",
+    "attr": "strong",
+    "filePath": "files/eml/eml/apt28/aaa@qqq.com/00HYGT66452KJAZP 严重错误.eml",
+    "emailId": "191",
+    "aptId": 0,
+    "aptName": "APT32",
+    "pid": 0,
+    "relation": "",
+    "page": 1,
+    "limit": 10,
+    "orderBy": "id DESC",
+    "eqSource": null,
+    "subRules": [
+      {
+        "id": 26,
+        "value": "45.59.171.13, 54.215.2.217, 10.144.1.72",
+        "type": "fromIp",
+        "attr": "strong",
+        "filePath": "files/eml/eml/apt28/aaa@qqq.com/00HYGT66452KJAZP 严重错误.eml",
+        "emailId": "191",
+        "aptId": 0,
+        "aptName": "APT32",
+        "pid": 25,
+        "relation": "and",
+        "page": 1,
+        "limit": 10,
+        "orderBy": "id DESC",
+        "eqSource": null,
+        "subRules": []
+      },
+      {
+        "id": 27,
+        "value": "alert319@163.com",
+        "type": "fromAdd",
+        "attr": "strong",
+        "filePath": "files/eml/eml/apt28/aaa@qqq.com/提醒：您帐号上发现可疑活动.eml",
+        "emailId": "192",
+        "aptId": 0,
+        "aptName": "APT32",
+        "pid": 25,
+        "relation": "and",
+        "page": 1,
+        "limit": 10,
+        "orderBy": "id DESC",
+        "eqSource": null,
+        "subRules": []
+      }
+    ]
+  },
+  "code": 0,
+  "msg": "SUCCESS",
+  "count": 1
+}

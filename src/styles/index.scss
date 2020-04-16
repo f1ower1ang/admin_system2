@@ -1,0 +1,110 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+@import './reset.scss';
+@import './util.scss';
+
+body {
+  min-height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 15px;
+}
+
+.comment-wrapper {
+  border: 1px solid #EBEEF5;
+  .comment-list {
+    height: 82px;
+    overflow: auto;
+    border-bottom: 1px solid #EBEEF5;
+    padding: 0 10px;
+    .item {
+      line-height: 40px;
+      display: flex;
+      border-bottom: 1px solid #EBEEF5;
+      align-items: center;
+      &:last-child {
+        border-bottom: none;
+      }
+      .content {
+        flex: 1;
+      }
+      .username {
+        width: 80px;
+        text-align: right;
+        color: $color-pl;
+      }
+      .time {
+        width: 130px;
+        font-size: $font-size-small;
+        color: $color-weak;
+        text-align: right;
+      }
+    }
+  }
+  .comment-add {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 50px;
+    .el-input {
+      flex: 1;
+      margin: 0 10px;
+    }
+  }
+}

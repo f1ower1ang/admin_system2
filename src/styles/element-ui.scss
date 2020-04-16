@@ -1,0 +1,261 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+.el-button+.el-button {
+  margin-left: 5px;
+}
+
+.common-table {
+  .el-table__header-wrapper tr {
+    background-color: $color-theme;
+    color: $color-white;
+    th {
+      background-color: transparent;
+    }
+  }
+  td, th {
+    padding: 8px 0;
+  }
+  .el-table__row {
+    td:first-child {
+      border-left: 1px solid #EBEEF5;
+    }
+    td:last-child {
+      border-right: 1px solid #EBEEF5;
+    }
+    &.el-table__row--striped {
+      td {
+        background: #f2f2f2 !important;
+      }
+    }
+  }
+}
+
+.common-form {
+  .el-row {
+    .el-form-item {
+      width: 19.5%;
+      margin-right: 0;
+      padding-right: 10px;
+      box-sizing: border-box;
+      vertical-align: baseline;
+      .el-form-item__content {
+        line-height: normal;
+        width: calc(100% - 75px);
+        vertical-align: middle;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+.el-radio__input {
+  vertical-align: top;
+}
+.el-radio__label {
+  padding-left: 6px;
+}
+
+.common-dialog {
+  .el-dialog__header {
+    background-color: $color-theme;
+    padding: 15px;
+    color: #fff;
+    .el-button {
+      color: #fff !important;
+    }
+    .el-dialog__headerbtn {
+      top: 14px;
+      right: 15px;
+      i {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.common-checkbox {
+  .el-checkbox__label {
+    padding-left: 5px;
+  }
+}
+
+.el-table th div {
+  padding: 0;
+  line-height: 23px;
+  vertical-align: middle;
+}
+
+.custom-slider {
+  z-index: 0;
+  .el-slider__runway{
+    margin: 16px 0;
+    background: #1B1B37;
+    .el-slider__bar{
+      background: #1B1B37;
+    }
+  }
+  .el-slider__button-wrapper{
+    top: -13px;
+    height: 25px;
+    .el-slider__button{
+      width: 15px;
+      height: 25px;
+      background: url("../assets/slices/slider1.png") no-repeat;
+      border-radius: 0;
+      position: relative;
+      border: none;
+      background-size: 100%;    /* 通过百分比设置 */
+    }
+  }
+  .el-slider__marks-stop{
+    background: #1B1B37;
+  }
+}
+
+.getPortSlider {
+  z-index: 0;
+  .el-slider__runway{
+    margin: 16px 0;
+    background: #E5E5E5;
+    .el-slider__bar{
+      background: #E5E5E5;
+    }
+  }
+  .el-slider__button-wrapper{
+    top: -13px;
+    height: 25px;
+    .el-slider__button{
+      width: 15px;
+      height: 25px;
+      background: url("../assets/slices/slider1.png") no-repeat;
+      border-radius: 0;
+      position: relative;
+      border: none;
+      background-size: 100%;    /* 通过百分比设置 */
+    }
+  }
+  .el-slider__marks-stop{
+    background: #E5E5E5;
+  }
+}
+
+.selectBox {
+  /* 用来设置当前页面element全局table的内间距 */
+  .el-table__row td{
+    padding: 0;
+    color: #a4a4a4;
+    font-size: 13px;
+  }
+  /* 用来设置当前页面element全局table 选中某行时的背景色*/
+  .el-table__body tr.current-row>td{
+    background-color: #15a0cb !important;
+    border: 1px dashed #ababab;
+    color: #ffffff;   /* 设置文字颜色，可以选择不设置 */
+  }
+  /* 用来设置当前页面element全局table 鼠标移入某行时的背景色*/
+  .el-table--enable-row-hover .el-table__body tr:hover>td {
+    /*background-color: #65e9fd;*/
+    cursor: pointer;
+    /* color: #f19944; */ /* 设置文字颜色，可以选择不设置 */
+  }
+}
+
+.timeForm, .form {
+  .el-input:hover{
+    /*border: 1px solid #727272;
+    border-radius: 6px;*/
+    border-color: #000000;
+    transform: scale(1.05)
+  }
+  .el-input__inner{
+    color: #000000;
+  }
+}
+
+.el-popconfirm__main {
+  padding-bottom: 15px;
+}
+
+.form {
+  /* 用来设置当前页面element全局table的内间距 */
+  .el-table__row td{
+    padding: 0;
+    color: #a4a4a4;
+    font-size: 12px;
+  }
+  /*!* 用来设置当前页面element全局table 选中某行时的背景色*!
+  .el-table__body tr.current-row>td{
+    background-color: #15a0cb !important;
+    border: 1px dashed #ababab;
+    color: #ffffff;   !* 设置文字颜色，可以选择不设置 *!
+  }
+  !* 用来设置当前页面element全局table 鼠标移入某行时的背景色*!
+  .el-table--enable-row-hover .el-table__body tr:hover>td {
+    background-color: #65e9fd;
+    cursor: pointer;
+    !* color: #f19944; *! !* 设置文字颜色，可以选择不设置 *!
+  }*/
+  .el-table--striped .el-table__body tr.el-table__row--striped.el-table__row--striped.el-table__row--striped td {
+    background-color: #F2F2F2 !important; /*替换为你需要的颜色，觉得优先级不够就加!important*/
+  }
+  .has-gutter{
+    th{
+      padding: 0;
+      height: 5px;
+    }
+  }
+  .el-table__body-wrapper{
+    td{
+      text-align: center;
+    }
+  }
+}

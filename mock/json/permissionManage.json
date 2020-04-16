@@ -1,0 +1,83 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "这是资源名称",
+      "URL": "/role/find*",
+      "parent": "角色管理",
+      "type": "接口"
+    },
+    {
+      "id": "2",
+      "name": "这是资源名称",
+      "URL": "/role/find*",
+      "parent": "角色管理",
+      "type": "接口"
+    },
+    {
+      "id": "3",
+      "name": "这是资源名称",
+      "URL": "/role/find*",
+      "parent": "角色管理",
+      "type": "接口"
+    },
+    {
+      "id": "4",
+      "name": "这是资源名称",
+      "URL": "/role/find*",
+      "parent": "角色管理",
+      "type": "接口"
+    },
+    {
+      "id": "5",
+      "name": "这是资源名称",
+      "URL": "/role/find*",
+      "parent": "角色管理",
+      "type": "接口"
+    },
+    {
+      "id": "6",
+      "name": "这是资源名称",
+      "URL": "/role/find*",
+      "parent": "角色管理",
+      "type": "接口"
+    },
+    {
+      "id": "7",
+      "name": "这是资源名称",
+      "URL": "/role/find*",
+      "parent": "角色管理",
+      "type": "接口"
+    },
+    {
+      "id": "8",
+      "name": "这是资源名称",
+      "URL": "/role/find*",
+      "parent": "角色管理",
+      "type": "接口"
+    },
+    {
+      "id": "9",
+      "name": "这是资源名称",
+      "URL": "/role/find*",
+      "parent": "角色管理",
+      "type": "接口"
+    },
+    {
+      "id": "10",
+      "name": "这是资源名称",
+      "URL": "/role/find*",
+      "parent": "角色管理",
+      "type": "接口"
+    },
+    {
+      "id": "11",
+      "name": "这是资源名称",
+      "URL": "/role/find*",
+      "parent": "角色管理",
+      "type": "接口"
+    }
+  ],
+  "total": 11,
+  "code": 0
+}
